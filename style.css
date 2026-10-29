@@ -1,3 +1,7 @@
+:root {
+    --vave: #8292FF;
+}
+
 html {
      scroll-padding: 100px;
      scroll-behavior: smooth;
@@ -17,7 +21,7 @@ html {
  .header1 {
      position: fixed;
      width: 100%;
-     background: #8292FF;
+     background: var(--vave);
      color: #fff;
      z-index: 999;
      top: 0;
@@ -50,16 +54,52 @@ html {
  }
 
  .header1__list-link.active {
-     color: rgb(7, 7, 39);
+     color: rgb(37, 37, 71);
      border-bottom: 4px solid black;
      padding-bottom: 10px ;
  }
 
   .header1__list-link:hover{
-     color: rgb(7, 7, 39);
+     color: rgb(37, 37, 71);
  }
 
  a {
      text-decoration: none;
  }
 
+.glav {
+     padding-block: 70px;
+     font-weight: 500;
+     font-size: 18px;
+     letter-spacing: -0.40px;
+}
+
+.vstup {
+     padding-block: 20px;
+     padding-right: 300px;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+}
+.opis {
+     padding-block: 10px;
+     padding-right: 300px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.znac {
+    padding-bottom: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.znac::after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid var(--vave);
+}
