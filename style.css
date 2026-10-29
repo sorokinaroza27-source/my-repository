@@ -29,12 +29,12 @@ html {
      max-width: 1069px;
      margin-inline: auto;
  } 
- 
+
  .header1__list {
      display: flex;
      justify-content: center;
      align-items: center;
-     gap: 20%;
+     gap: clamp(15px, 4vw, 30px);
  }
 
   ul {
