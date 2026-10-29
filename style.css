@@ -76,14 +76,12 @@ html {
 
 .vstup {
      padding-block: 20px;
-     padding-right: 300px;
      display: flex;
      flex-direction: column;
      gap: 5px;
 }
 .opis {
      padding-block: 10px;
-     padding-right: 300px;
      display: flex;
      flex-direction: column;
      gap: 10px;
