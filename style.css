@@ -25,6 +25,11 @@ html {
 
  }
 
+ [class*="__container"] {
+     max-width: 1069px;
+     margin-inline: auto;
+ } 
+ 
  .header1__list {
      display: flex;
      justify-content: center;
