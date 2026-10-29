@@ -68,23 +68,27 @@ html {
  }
 
 .glav {
-     padding-block: 70px;
+     padding-block: 70px ;
      font-weight: 500;
      font-size: 18px;
      letter-spacing: -0.40px;
 }
 
 .vstup {
-     padding-block: 20px;
+     padding: 20px 10px;
      display: flex;
      flex-direction: column;
      gap: 5px;
 }
 .opis {
-     padding-block: 10px;
+     padding: 10px 10px;
      display: flex;
      flex-direction: column;
      gap: 10px;
+}
+
+.zagol {
+    padding-left: 10px;
 }
 
 .znac {
