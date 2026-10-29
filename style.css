@@ -76,6 +76,7 @@ html {
 }
 
 .vstup {
+     font-size: 20px;
      padding-block: 20px;
      display: flex;
      flex-direction: column;
