@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Моя работа</title>
+        <title>Главная Посёлок Виля</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="logos/Group 1.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +19,12 @@
                             <a class="header1__list-link active" href="index.html">Главная</a>
                         </li>
                         <li class="header1__list-item">
-                            <a class="header1__list-link" href="quest.html">Интерактивная карта</a>
+                            <a class="header1__list-link" href="quest.html">Интерактивная часть</a>
                         </li> 
                     </ul>
                 </nav>
             </div>
-        </header>
+        </header>      
         <main>
             <section class="glav">
                 <div class="glav__container">
@@ -53,9 +53,58 @@
                     </div>
                 </div>
                 <div class="gallery__container">
-
+                    <div class="gallery" id="galler">
+                        <figure>
+                            <img src="gallery/images.jpeg" alt="">
+                            <figcaption>
+                                Источник: <a href="https://vr-vyksa.ru/derevenki/vilskaya-letopis-ot-ery-kosy-do-epohi-interneta/">Выксунский рабочий</a>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="gallery/Никольская_церковь_(Виля).jpg" alt="" class="">
+                                <figcaption>
+                                    Источник: <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BB%D1%8F">Виля - Википедия</a>
+                                </figcaption>
+                        </figure>
+                        <img src="gallery/photo_2026-11-17_16-24-00.jpg" alt="Вид 3">
+                        <img src="фото4.jpg" alt="Вид 4">
+                        <img src="фото5.jpg" alt="Вид 5">
+                    </div>
+                </div>
+                <div class="perehod__container">
+                    <div class="perehod">
+                        <p>После ознакомления мы можете отправиться к интерактивной части! Там вы можете провести время с инетересом и узнать больше о нашем посёлке! (Для перехода нажмите на "Интерактивная часть" в верхнем меню) </p>
+                    </div>
                 </div>
             </section>
+            <div id="lightbox" class="lightbox">
+                <span class="lightbox__close">&times;</span>
+                <img class="lightbox__img" src="" alt="">
+            </div>
         </main>
+        <script>
+           const galleryImages = document.querySelectorAll('.gallery img');
+           const lightbox = document.getElementById('lightbox');
+           const lightboxImg = document.querySelector('.lightbox__img');
+           const closeBtn = document.querySelector('.lightbox__close');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.classList.add('active');
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+        </script>
     </body>
 </html>
