@@ -15,7 +15,7 @@ html {
  }
 
  body {
-     font-family: "DM sans", sans-serif !important;
+     font-family: "Manrope", sans-serif;
  }
 
  .header1 {
@@ -29,10 +29,6 @@ html {
 
  }
 
- [class*="__container"] {
-     max-width: 1069px;
-     margin-inline: auto;
- } 
 
  .header1__list {
      display: flex;
@@ -66,6 +62,11 @@ html {
  a {
      text-decoration: none;
  }
+
+ [class*="__container"] {
+     max-width: 1069px;
+     margin-inline: auto;
+ } 
 
 .glav {
      padding-block: 70px ;
@@ -104,22 +105,19 @@ html {
     border-bottom: 4px solid var(--vave);
 }
 
-/* Контейнер карусели со скроллом */
 .gallery__container {
     width: 100%;
     overflow-x: auto;
     padding-bottom: 15px;
-    scrollbar-color: #60a5fa #f1f5f9;
+    scrollbar-color: var(--vave) #f1f5f9;
 }
 
-/* Трек с картинками в одну линию */
 .gallery {
     display: flex;
     gap: 20px;
     width: max-content;
 }
 
-/* Стили самих картинок */
 .gallery img {
     width: 300px;
     height: 200px;
@@ -134,7 +132,6 @@ html {
     transform: scale(1.02);
 }
 
-/* Модальное окно просмотра */
 .lightbox {
     display: none;
     position: fixed;
@@ -171,7 +168,7 @@ html {
 }
 
 .lightbox__close:hover {
-    color: #60a5fa;
+    color: var(--vave);
 }
 
 .perehod {
@@ -179,15 +176,100 @@ html {
     display: flex;
 }
 
+.vyb {
+    position: relative;
+    padding-inline: 15%;
+    padding-block: 2%;
+    border-bottom: 4px;
+}
+
+.vyb::after{
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 15%;
+    width: 70%;
+    border-bottom: 4px solid var(--vave);
+}
 .map {
     padding-block: 100px;
 }
 img.my-map {
     display: block;
-    position: center;
+    margin: 0 auto;
     width: 60%;
-    height: auto;
     max-width: 100%;
-    display: block;
+    height: auto;
 }
 
+.map p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.map_buttons {
+    position: relative;
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.map_buttons .my-map {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.map-btn {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--vave);
+    border: 2px solid darkblue;
+    cursor: pointer;
+}
+
+.map-btn--3 { 
+    top: 15%;
+    left: 45%;
+}
+
+.map-btn--2 {
+    top: 55%;
+    left: 46%;
+}
+
+.map-btn--1 {
+    top: 87%;
+    left: 45%;
+}
+
+.back-btn {
+    margin-bottom: 16px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.point-info {
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.quiz-answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.quiz-answers button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
