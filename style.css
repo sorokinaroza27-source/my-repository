@@ -251,7 +251,8 @@ img.my-map {
     margin-bottom: 16px;
     padding: 8px 14px;
     border-radius: 8px;
-    cursor: pointer;
+    cursor: pointer; 
+    border: 2px solid;
 }
 
 .point-info {
@@ -274,4 +275,5 @@ img.my-map {
     border-radius: 8px;
     cursor: pointer;
     background-color: var(--vave);
+    border: 2px solid #665e7a;
 }
