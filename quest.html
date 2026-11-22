@@ -29,17 +29,18 @@
             <section class="interaktiv">
                 <div class="map__container">
                     <div class="map">
-                        <p class="vyb">Выберете на карте точку с которой вам будет удобнее всего начать маршрут</p>
+                        
                         <div id="start-screen" class="map_buttons">
-                         <img class="my-map" src="gallery/всеточки.jpg" alt="">
+                            <p class="vyb">Выберете точку с которой вам удобнее всего начать маршрут</p>
+                            <img class="my-map" src="gallery/всеточки.jpg" alt="">
                             <div class="choice_buttons">
-                            <button type="button" class="map-btn map-btn--1" data-start="center" aria-label="Старт: Центр"></button>
-                            <button type="button" class="map-btn map-btn--2" data-start="school" aria-label="Старт: Школьная"></button>
-                            <button type="button" class="map-btn map-btn--3" data-start="lyapuha" aria-label="Старт: Ляпуха"></button>
+                                <button type="button" class="map-btn map-btn--1" data-start="center" aria-label="Старт: Центр"></button>
+                                <button type="button" class="map-btn map-btn--2" data-start="school" aria-label="Старт: Школьная"></button>
+                                <button type="button" class="map-btn map-btn--3" data-start="lyapuha" aria-label="Старт: Ляпуха"></button>
                             </div>
                         </div>
                         <div id="quest-screen" class="map" hidden>
-                            <button type="button" id="back-btn">Назад к выбору старта</button>
+                            <button type="button" id="back-btn" class="back-btn">Назад к выбору старта</button>
                             <h2 id="route-heading"></h2>
                             <div class="map_buttons">
                                 <img id="route-map-img" class="my-map" src="" alt="Карта выбранного маршрута">
