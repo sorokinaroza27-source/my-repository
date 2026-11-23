@@ -192,7 +192,7 @@ html {
     border-bottom: 4px solid var(--vave);
 }
 .map {
-    padding-block: 100px;
+    padding-block: 120px;
 }
 img.my-map {
     display: block;
