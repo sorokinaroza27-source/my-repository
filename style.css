@@ -210,7 +210,8 @@ img.my-map {
 
 .map_buttons {
     position: relative;
-    width: 90%;
+    width: 95%;
+    max-width: 100%;
     margin: 0 auto;
 }
 .map_buttons .my-map {
@@ -261,14 +262,14 @@ img.my-map {
     background: rgba(255, 255, 255, 0.9);
 }
 
-.quiz-answers {
+.quiz-answers-btn {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 10px;
 }
 
-.quiz-answers button {
+.quiz-answers-btn button {
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
@@ -276,10 +277,37 @@ img.my-map {
     border: 2px solid #665e7a;
 }
 
-.start-quiz-btn button {
+.start-quiz-btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
     background-color: var(--vave);
     border: 2px solid #665e7a;
+}
+
+.point-media {
+    margin-bottom: 14px;
+}
+
+.point-photo {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-source {
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.photo-source a {
+    color: inherit;
+    text-decoration: underline;
 }
