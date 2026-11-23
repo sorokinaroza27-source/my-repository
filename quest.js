@@ -19,12 +19,12 @@ const places = {
         answer: 1
     },
     house: {
-        title: '',
+        title: 'Кирпичный двухэтажный дом',
         top: '15%',
         left: '45%',
-        story: 'История места Ляпуха.',
-        question: 'Какая точка здесь отмечена?',
-        options: ['Школьная', 'Центр', 'Ляпуха'],
+        story: 'Ляпуха - это бывшая деревня в городском округе Выкса , которая впервые упоминается в документах 1778 года как поселение углежогов и кирпичников, а к 1916 году насчитывала уже сто хозяйств и более шестисот жителей. Как самостоятельный населённый пункт вблизи рабочего посёлка Виля деревня просуществовала до середины 1960-х годов, после чего вошла в состав посёлк. Поскольку Ляпуха долгое время развивалась отдельно от Вили и имела собственное население, в поселении было необходимо отдельное учебное заведение. Именно в этом здании размещалась местная школа, которая служила главным образовательным центром для детей всей деревни, позволяя им учиться рядом с домом вплоть до объединения двух населённых пунктов.',
+        question: 'До какого периода местная школа в Ляпухе оставалась главным образовательным центром для детей всей деревни?',
+        options: ['До 1778 года', 'До 1916 года', 'До середины 1960-х годов'],
         answer: 2
     },
     memorial: {
@@ -202,29 +202,44 @@ startButtons.forEach((btn) => {
 
 function renderPoint(place, pointNumber) {
     const imageHtml = place.image
-        ? '<img class="point-photo" src=' = place.image = '" alt="' + (place.image.title) + '">'
+        ? '<img class="point-photo" src="' + place.image + '" alt="' + (place.imageAlt || place.title) + '">'
         : '';
-        
-    pointInfo.innerHTML = `
-        <h3>Точка №${pointNumber} — ${place.title}</h3>
-        <p>${place.story}</p>
-        <p><strong>Вопрос:</strong> ${place.question}</p>
-        <div id="quiz-answers" class="quiz-answers"></div>
-        <p id="quiz-result"></p>
-   `;
 
+    pointInfo.innerHTML =
+        '<h3>Точка №' + pointNumber + ' — ' + place.title + '</h3>' +
+        imageHtml +
+        '<div id="story-stage" class="start-quiz-btn">' +
+            '<p>' + place.story + '</p>' +
+            '<button type="button" id="start-quiz-btn">Ответить на вопрос</button>' +
+        '</div>' +
+        '<div id="quiz-stage" hidden>' +
+            '<p><strong>Вопрос:</strong> ' + place.question + '</p>' +
+            '<div id="quiz-answers" class="quiz-answers"></div>' +
+            '<p id="quiz-result"></p>' +
+        '</div>';
+
+    const storyStage = document.getElementById('story-stage');
+    const quizStage = document.getElementById('quiz-stage');
+    const startQuizBtn = document.getElementById('start-quiz-btn');
     const answersBox = document.getElementById('quiz-answers');
     const resultText = document.getElementById('quiz-result');
 
-    place.options.forEach((option, idx) => {
+    startQuizBtn.addEventListener('click', function () {
+        storyStage.hidden = true;
+        quizStage.hidden = false;
+    });
+
+    place.options.forEach(function (option, idx) {
         const optionBtn = document.createElement('button');
         optionBtn.type = 'button';
         optionBtn.textContent = option;
 
-        optionBtn.addEventListener('click', () => {
-            resultText.textContent = idx === place.answer
-                ? 'Правильно!'
-                : 'Попробуй ещё раз.';
+        optionBtn.addEventListener('click', function () {
+            if (idx === place.answer) {
+                resultText.textContent = 'Правильно!';
+            } else {
+                resultText.textContent = 'Попробуй ещё раз.';
+            }
         });
 
         answersBox.appendChild(optionBtn);

@@ -197,8 +197,7 @@ html {
 img.my-map {
     display: block;
     margin: 0 auto;
-    width: 60%;
-    max-width: 100%;
+    width: 95%;
     height: auto;
 }
 
@@ -211,8 +210,7 @@ img.my-map {
 
 .map_buttons {
     position: relative;
-    width: 60%;
-    max-width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 .map_buttons .my-map {
@@ -271,6 +269,14 @@ img.my-map {
 }
 
 .quiz-answers button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--vave);
+    border: 2px solid #665e7a;
+}
+
+.start-quiz-btn button {
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
