@@ -78,7 +78,8 @@ html {
 
 .vstup {
      font-size: 20px;
-     padding-block: 20px;
+     padding-bottom: 30px;
+     padding-top: 40px;
      display: flex;
      flex-direction: column;
      gap: 5px;
