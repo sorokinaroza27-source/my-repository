@@ -251,6 +251,7 @@ html {
 }
  
 .nachalo {
+  padding-top: 20px;
   width: 100%;
   margin: 0 auto 6%;
   line-height: 1.5;
@@ -259,6 +260,16 @@ html {
 .nachalo p {
   width: 100%;
   margin: 0 0 2.5%;
+}
+
+.nachalo h2 {
+    color: #00072e;
+    background-color:#cacaca ;
+    padding: 20px;
+    border: 2px solid var(--vave);
+    border-radius: 10px;
+    font-family: "Cormorant Infant", serif;
+    font-size: 35px;
 }
 
 .story img {
