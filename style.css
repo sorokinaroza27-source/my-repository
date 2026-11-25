@@ -244,12 +244,33 @@ html {
 }
 
 .story {
-    padding-block: 20 px;
+    padding: 20 px;
     font-weight: 600;
     font-family: 'Manrope';
     font-size: 18px;
 }
  
+.nachalo {
+  width: 100%;
+  margin: 0 auto 6%;
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.5;
+}
+
+.nachalo p {
+  width: 100%;
+  margin: 0 0 2.5%;
+}
+
+.story img {
+  display: block;
+  width: 85%;
+  max-width: 650px;
+  height: auto;
+  margin: 3% auto 4%;
+  border-radius: 12px;
+}
+
 .vyb {
     position: relative;
     padding-left: 3%;
