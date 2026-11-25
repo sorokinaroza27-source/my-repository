@@ -236,33 +236,20 @@ html {
     }
 }
 
-.opis {
+.nachalo {
      padding-block: 10px;
      display: flex;
      flex-direction: column;
      gap: 10px;
 }
 
-.znac {
-    padding-bottom: 5px;
-    position: relative;
-    display: inline-block;
+.story {
+    padding-block: 20 px;
+    font-weight: 600;
+    font-family: 'Manrope';
+    font-size: 18px;
 }
-
-.znac::after{
-    content: '';
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    width: 100%;
-    border-bottom: 4px solid var(--vave);
-}
-
-.perehod {
-    padding-block: 20px;
-    display: flex;
-}
-
+ 
 .vyb {
     position: relative;
     padding-left: 3%;
