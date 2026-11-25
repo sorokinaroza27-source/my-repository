@@ -14,6 +14,12 @@ html {
      box-sizing: border-box;
  }
 
+ .marck-script-regular {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
  body {
      font-family: "Manrope", sans-serif;
  }
@@ -84,6 +90,101 @@ html {
      flex-direction: column;
      gap: 5px;
 }
+
+.vstupdobr {
+    font-size: 60px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+.cytat_block {
+    font-size: 30px;
+    padding-block: 20px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+
+}
+
+.cytat_img {
+    display: block;
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.cytat {
+    font-family: "Old Standard";
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    margin: 0 auto;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.perehod {
+    display: flex;
+    padding-inline: 60px;
+    gap: 20%;
+    margin-bottom: 80px;
+}
+
+.perehod img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.nachat {
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 460px;
+}
+
+.prigl {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.btn-nachat {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 40%;
+    background: #000e63;
+    border: 3px solid var(--vave);
+    color: #fff;
+    height: 60px;
+    width: 120px;
+    margin: auto;
+    font-size: 20px;
+       
+}
+
+.author { 
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #242424;
+    display: flex;
+    gap: 30%;
+    border: 2px solid #8d8d8d ;
+}
+
 .opis {
      padding-block: 10px;
      display: flex;
@@ -104,72 +205,6 @@ html {
     left: 0;
     width: 100%;
     border-bottom: 4px solid var(--vave);
-}
-
-.gallery__container {
-    width: 100%;
-    overflow-x: auto;
-    padding-bottom: 15px;
-    scrollbar-color: var(--vave) #f1f5f9;
-}
-
-.gallery {
-    display: flex;
-    gap: 20px;
-    width: max-content;
-}
-
-.gallery img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.02);
-}
-
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox.active {
-    display: flex;
-}
-
-.lightbox__img {
-    max-width: 85%;
-    max-height: 85vh;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    object-fit: contain;
-}
-
-.lightbox__close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.lightbox__close:hover {
-    color: var(--vave);
 }
 
 .perehod {
@@ -313,16 +348,5 @@ img.my-map {
     text-decoration: underline;
 }
 
-.perehod {
-     font-size: 20px;
-     padding-block: 20px;
-     display: flex;
-     flex-direction: column;
-     gap: 5px;
-}
 
-.qvstup {
-    position: relative;
-    padding-left: 3%;
-    padding-bottom: 5px;
-}
+
