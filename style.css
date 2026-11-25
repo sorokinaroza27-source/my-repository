@@ -253,7 +253,6 @@ html {
 .nachalo {
   width: 100%;
   margin: 0 auto 6%;
-  font-size: clamp(18px, 2.2vw, 24px);
   line-height: 1.5;
 }
 
@@ -264,148 +263,80 @@ html {
 
 .story img {
   display: block;
-  width: 85%;
-  max-width: 650px;
+  width: 45%;
+  max-width: 100%;
   height: auto;
   margin: 3% auto 4%;
   border-radius: 12px;
 }
 
-.vyb {
-    position: relative;
-    padding-left: 3%;
-    padding-bottom: 5px;
-    border-bottom: 4px;
+.routes-block {
+  width: 100%;
+  margin-top: 5%;
 }
 
-.vyb::after{
-    content: '';
-    position: absolute;
-    bottom: 3px;
-    left: 3%;
-    width: 93%;
-    border-bottom: 4px solid var(--vave);
-}
-.map {
-    padding-block: 120px;
-}
-img.my-map {
-    display: block;
-    margin: 0 auto;
-    width: 95%;
-    height: auto;
+.routes-heading {
+  width: 100%;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-size: clamp(24px, 3vw, 34px);
+  margin: 0 0 24px;
 }
 
-.map p {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 20px;
+.routes-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
 }
 
-
-.map_buttons {
-    position: relative;
-    width: 95%;
-    max-width: 100%;
-    margin: 0 auto;
+.route-box {
+  width: 32%;
+  padding: 18px 16px;
+  box-sizing: border-box;
+  border: 2px solid #000e63;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.map_buttons .my-map {
-    display: block;
+
+.route-box__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.route-box__title {
+  font-family: "Cormorant Infant", serif;
+  font-size: clamp(20px, 2.2vw, 25px);
+  margin: 0 0 16px;
+}
+
+.route-box__btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .routes-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .route-box {
     width: 100%;
-    height: auto;
+  }
 }
-
-.map-btn {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: var(--vave);
-    border: 2px solid darkblue;
-    cursor: pointer;
-}
-
-.map-btn--3 { 
-    top: 15%;
-    left: 45%;
-}
-
-.map-btn--2 {
-    top: 62%;
-    left: 46%;
-}
-
-.map-btn--1 {
-    top: 88%;
-    left: 46%;
-}
-
-.back-btn {
-    background-color: var(--vave);
-    margin-bottom: 16px;
-    padding: 8px 14px;
-    border-radius: 8px;
-    cursor: pointer; 
-    border: 2px solid;
-}
-
-.point-info {
-    max-width: 600px;
-    margin: 20px auto 0;
-    padding: 16px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.9);
-}
-
-.quiz-answers-btn {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-}
-
-.quiz-answers-btn button {
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: var(--vave);
-    border: 2px solid #665e7a;
-}
-
-.start-quiz-btn{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: var(--vave);
-    border: 2px solid #665e7a;
-}
-
-.point-media {
-    margin-bottom: 14px;
-}
-
-.point-photo {
-    display: block;
-    width: 100%;
-    max-width: 480px;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.photo-source {
-    margin-top: 6px;
-    font-size: 13px;
-}
-
-.photo-source a {
-    color: inherit;
-    text-decoration: underline;
-}
-
 
 
