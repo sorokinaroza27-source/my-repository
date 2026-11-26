@@ -141,3 +141,9 @@ body {
   font-size: 13px;
   color: #55607a;
 }
+
+.tall-photo {
+  max-height: 55vh;
+  width: auto;
+  object-fit: contain;
+}

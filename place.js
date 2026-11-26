@@ -129,6 +129,7 @@ const PLACES = {
       {
         src: "gallery/башня.png",
         alt: "Водонапорная башня на улице Кирова",
+        className: "tall-photo",
       }
     ],
     story: "Красная кирпичная башня на улице Кирова в посёлке Виля - это старая водонапорная башня. Её построили в середине 1960-х годов, когда в посёлке активно проводили благоустройство, благодаря чему у местных жителей наконец появился долгожданный центральный водопровод. Со временем необходимость в старой водокачке отпала, но она до сих пор стоит на улице Кирова как заметный и привычный для всех жителей ориентир.",
@@ -226,6 +227,7 @@ const PLACES = {
         {
             src: "gallery/вышка.png",
             alt: "Телевизионная вышка рядом с Вилей",
+            className: "tall-photo",
         }
     ],
     story: "Телевизионная мачта высотой около 235 метров была официально открыта в январе 1978 года и запущена в полноценную работу к 1979 году для приёма дециметрового сигнала, его перекодировки в метровый диапазон и трансляции теле- и радиопрограмм сразу на несколько районов — Выксунский, Кулебакский и Навашинский. Начинавшаяся с единственного передатчика и одного телеканала в пустом здании, со временем радиотелевизионная станция «Выкса» (ныне входящая в РТРС) обросла техникой для вещания трёх центральных каналов, в 1990-е годы обеспечивала эфир первой местной телекомпании «Выкса-ТВ», а в 2010-х прошла модернизацию, перейдя на современное цифровое вещание первого и второго мультиплексов с охватом около 180 тысяч жителей Выксы и соседних территорий.",
@@ -286,19 +288,20 @@ document.addEventListener("DOMContentLoaded", () => {
   document.title = `${place.title} — Посёлок Виля`;
   titleEl.textContent = place.title;
 
- if (Array.isArray(place.images) && place.images.length) {
-   mediaEl.innerHTML = place.images
+if (Array.isArray(place.images) && place.images.length) {
+  mediaEl.innerHTML = place.images
     .map((img) => {
-       const label = img.alt || place.title;
-       return `
-         <figure class="place-figure">
-           <img src="${img.src}" alt="${label}" class="place-photo">
-           <figcaption class="place-caption">${label}</figcaption>
-         </figure>
-      `;
-     })
-     .join("");
-  }
+      const label = img.alt || place.title;
+      const extraClass = img.className ?  `${img.className}` : "";
+      return `
+        <figure class="place-figure">
+          <img src="${img.src}" alt="${label}" class="place-photo${extraClass}">
+          <figcaption class="place-caption">${label}</figcaption>
+        </figure>
+    `;
+    })
+    .join("");
+}
 
   storyEl.innerHTML = `<p>${place.story}</p>`;
 
