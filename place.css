@@ -151,10 +151,12 @@ body {
 }
 
 .place-figure .place-photo.photo-tall {
+  display: block !important;
   width: auto !important;
   max-width: 100% !important;
   height: auto !important;
   max-height: 320px !important;
-  margin: 0 auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   object-fit: contain !important;
 }
