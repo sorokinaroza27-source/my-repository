@@ -142,8 +142,11 @@ body {
   color: #55607a;
 }
 
-.tall-photo {
-  max-height: 55vh;
+.place-photo.photo-tall {
+  display: block;
+  max-height: 360px;
   width: auto;
+  max-width: 100%;
+  margin: 0 auto;
   object-fit: contain;
 }
