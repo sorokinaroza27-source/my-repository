@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Главная Посёлок Виля</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="logos/Group 1.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Manrope:wght@200..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Объект маршрута — Посёлок Виля</title>
+  <link rel="stylesheet" href="place.css">
+</head>
+<body>
+  <main class="place-page">
+    <div class="place-container">
+      <a href="route1.html" class="place-back" id="backToMap">← Назад к карте</a>
 
-        <main class="place-page">
-            <a href="javascript:history.back()" class="back-link">← Назад к маршруту</a>
-            <h1 id="placeTitle"></h1>
-            <div id="placeStory"></div>
+      <article class="place-card" id="placeCard">
+        <h1 class="place-title" id="placeTitle">Объект маршрута</h1>
+        <div class="place-media" id="placeMedia"></div>
+        <div class="place-story" id="placeStory"></div>
 
-            <section class="quiz-box">
-            <h2>Проверь себя</h2>
-            <p id="quizQuestion"></p>
-            <div id="quizOptions"></div>
-            <p id="quizResult"></p>
-            </section>
-        </main>
+        <div class="place-actions">
+          <button type="button" class="place-quiz-btn" id="openQuizBtn">Пройти мини-тест</button>
+        </div>
 
-        <script src="js/place.js"></script>
-    </body>
+        <section class="place-quiz" id="placeQuiz" hidden>
+          <h2 class="place-quiz__heading">Проверь себя</h2>
+          <p class="place-quiz__question" id="quizQuestion"></p>
+          <div class="place-quiz__options" id="quizOptions"></div>
+          <p class="place-quiz__result" id="quizResult"></p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script src="place.js"></script>
+</body>
 </html>
