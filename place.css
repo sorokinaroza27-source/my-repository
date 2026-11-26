@@ -150,7 +150,7 @@ body {
   object-fit: cover;
 }
 
-.place-figure .place-photo.photo-tall {
+.place-figure .place-photophoto-tall {
   display: block !important;
   width: auto !important;
   max-width: 100% !important;
