@@ -142,11 +142,19 @@ body {
   color: #55607a;
 }
 
-.place-photo.photo-tall {
+.place-photo {
   display: block;
-  max-height: 360px;
-  width: auto;
+  width: 100%;
   max-width: 100%;
-  margin: 0 auto;
-  object-fit: contain;
+  height: auto;
+  object-fit: cover;
+}
+
+.place-figure .place-photo.photo-tall {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 320px !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
 }
