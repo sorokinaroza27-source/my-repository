@@ -114,7 +114,7 @@ html {
 
 .cytat {
     font-family: "Great Vibes", serif;
-    font-size: clamp(14px, 4vw, 28px);
+    font-size: clamp(16px, 6vw, 34px);
     position: absolute;
     top: 47%;
     left: 50%;
