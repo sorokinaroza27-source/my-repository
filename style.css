@@ -1,5 +1,5 @@
 :root {
-    --vave: #be80e2;
+    --vave: #d194f5;
 }
 
 html {
@@ -95,10 +95,11 @@ html {
     font-size: clamp(32px, 5vw, 60px);
     font-family: "Great Vibes", cursive;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     margin: 0 auto;
     line-height: 1.2;
+    color: #007740;
 }
 
 .cytat_block {
@@ -112,8 +113,8 @@ html {
 }
 
 .cytat {
-    font-family: "Manrope", serif;
-    font-size: clamp(11px, 2vw, 22px);
+    font-family: "Great Vibes", serif;
+    font-size: clamp(14px, 4vw, 28px);
     position: absolute;
     top: 47%;
     left: 50%;
@@ -163,7 +164,7 @@ html {
     cursor: pointer;
     border-radius: 30px;
     background: var(--vave);
-    border: 3px solid  #441763;
+    border: 3px solid  #017558;
     color: #fff;
     height: 60px;
     width: 120px;
@@ -255,10 +256,10 @@ html {
 }
 
 .nachalo h2 {
-    color: #18002e;
+    color: #1d0038;
     background-color:#d9ece2 ;
     padding: 20px;
-    border: 2px solid #320061;
+    border: 2px solid #530d96;
     border-radius: 10px;
     font-family: "Cormorant Infant", serif;
     font-size: 26px;
