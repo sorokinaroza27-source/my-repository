@@ -32,7 +32,7 @@ const PLACES = {
     answer: 1
   },
   house: {
-    title: "Кирпичный двухэтажный дом",
+    title: "Дом Денисова",
     audio: "audio/audio.mp3",
     images: [
         {
