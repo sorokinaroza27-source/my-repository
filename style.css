@@ -1,5 +1,5 @@
 :root {
-    --vave: #8292FF;
+    --vave: #be80e2;
 }
 
 html {
@@ -56,13 +56,13 @@ html {
  }
 
  .header1__list-link.active {
-     color: rgb(37, 37, 71);
+     color: rgb(0, 0, 0);
      border-bottom: 4px solid black;
      padding-bottom: 0px ;
  }
 
   .header1__list-link:hover{
-     color: rgb(37, 37, 71);
+     color: rgb(196, 196, 196);
  }
 
  a {
@@ -111,15 +111,8 @@ html {
     margin: 0 auto;
 }
 
-.cytat_img {
-    display: block;
-    width: 100%;
-    max-height: 180px;
-    object-fit: contain;
-}
-
 .cytat {
-    font-family: "Old Standard", serif;
+    font-family: "Manrope", serif;
     font-size: clamp(11px, 2vw, 22px);
     position: absolute;
     top: 47%;
@@ -127,7 +120,6 @@ html {
     transform: translate(-50%, -50%);
     margin: 0;
     white-space: nowrap;
-    color: #fff;
     text-align: center;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
@@ -170,8 +162,8 @@ html {
     display: inline-block;
     cursor: pointer;
     border-radius: 30px;
-    background: #000e63;
-    border: 3px solid var(--vave, #000e63);
+    background: var(--vave);
+    border: 3px solid  #441763;
     color: #fff;
     height: 60px;
     width: 120px;
@@ -263,10 +255,10 @@ html {
 }
 
 .nachalo h2 {
-    color: #00072e;
-    background-color:#cacaca ;
+    color: #18002e;
+    background-color:#d9ece2 ;
     padding: 20px;
-    border: 2px solid var(--vave);
+    border: 2px solid #320061;
     border-radius: 10px;
     font-family: "Cormorant Infant", serif;
     font-size: 26px;
@@ -306,7 +298,7 @@ html {
   width: 32%;
   padding: 18px 16px;
   box-sizing: border-box;
-  border: 2px solid #000e63;
+  border: 2px solid #3f0063;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -332,7 +324,7 @@ html {
   margin-top: auto;
   display: inline-block;
   padding: 10px 20px;
-  background: #000e63;
+  background: #410075;
   color: #fff;
   text-decoration: none;
   border-radius: 25px;

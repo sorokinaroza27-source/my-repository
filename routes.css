@@ -17,7 +17,7 @@ html, body {
   width: clamp(18px, 2vw, 24px);
   height: clamp(18px, 2vw, 24px);
   border-radius: 50%;
-  background: #000e63;
+  background: #460080;
   color: #ffffff;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
@@ -144,5 +144,5 @@ img {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  color: #000e63;
+  color: #2b0063;
 }
